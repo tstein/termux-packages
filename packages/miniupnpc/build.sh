@@ -3,8 +3,8 @@ TERMUX_PKG_DESCRIPTION="Small UPnP client library and tool to access Internet Ga
 TERMUX_PKG_LICENSE="BSD 3-Clause"
 TERMUX_PKG_MAINTAINER="@termux"
 TERMUX_PKG_VERSION=2.2.5
-TERMUX_PKG_SRCURL=https://miniupnp.tuxfamily.org/files/miniupnpc-$TERMUX_PKG_VERSION.tar.gz
-TERMUX_PKG_SHA256=38acd5f4602f7cf8bcdc1ec30b2d58db2e9912e5d9f5350dd99b06bfdffb517c
+TERMUX_PKG_SRCURL=https://github.com/miniupnp/miniupnp/archive/refs/tags/miniupnpc_${TERMUX_PKG_VERSION//./_}.tar.gz
+TERMUX_PKG_SHA256=feb2ce11c548115f6e7dead7a523790aceeca92b9fca718f26e5b22303af313c
 TERMUX_PKG_BREAKS="miniupnpc-dev"
 TERMUX_PKG_REPLACES="miniupnpc-dev"
 
