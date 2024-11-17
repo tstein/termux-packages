@@ -1,0 +1,13 @@
+diff --git a/src/recipe.rs b/src/recipe.rs
+index 05516225..35fb20df 100644
+--- a/src/recipe.rs
++++ b/src/recipe.rs
+@@ -324,6 +324,8 @@ impl<'src, D> Recipe<'src, D> {
+       evaluated_lines.push(evaluator.evaluate_line(line, false)?);
+     }
+
++    evaluated_lines[0] = format!("@TERMUX_PREFIX@{}", evaluated_lines[0]);
++
+     if config.verbosity.loud() && (config.dry_run || self.quiet) {
+       for line in &evaluated_lines {
+         eprintln!(
